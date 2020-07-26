@@ -13,6 +13,21 @@
             window.alert(5 * 2) -> multiplicação
             window.alert(5 / 2) -> divisão
             window.alert(5 ** 2) -> exponenciação */
+
+         /* Simplificação de auto atribuições:
+         n = 3
+         n += 5
+         resultado -> n = 8 */
+
+         window.alert("Bem-vindo à calculadora de equações de 2º grau!")
+         var a = window.prompt("Insira o valor de a:")
+         var b = window.prompt("Insira o valor de b:")
+         var c = window.prompt("Insira o valor de c:")
+         var delta = b**2 - 4*a*b
+         window.alert("O Delta vale" + delta)
+         var x2 = (b + delta**(1/2)) / 2*a
+         var x2 = (b - delta**(1/2)) / 2*a
+         window.alert("O valor de x é " + x1 + "ou " + x2)
     </script>
 </body>
 </html>
