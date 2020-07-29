@@ -14,20 +14,40 @@
             window.alert(5 / 2) -> divisão
             window.alert(5 ** 2) -> exponenciação */
 
-         /* Simplificação de auto atribuições:
+         /* Simplificação de auto-atribuições:
          n = 3
          n += 5
          resultado -> n = 8 */
 
-         window.alert("Bem-vindo à calculadora de equações de 2º grau!")
-         var a = window.prompt("Insira o valor de a:")
-         var b = window.prompt("Insira o valor de b:")
-         var c = window.prompt("Insira o valor de c:")
-         var delta = b**2 - 4*a*b
-         window.alert("O Delta vale" + delta)
-         var x2 = (b + delta**(1/2)) / 2*a
-         var x2 = (b - delta**(1/2)) / 2*a
-         window.alert("O valor de x é " + x1 + "ou " + x2)
+         window.alert("Bem-vindo à calculadora de PA!")
+         var a1 = Number(window.prompt("Insira o valor do 1º termo:"))
+         var n = Number(window.prompt("Insira o número do termo desejado:"))
+         var r = Number(window.prompt("Insira o valor da raíz:"))
+         an = a1 + (n-1)*r
+         window.alert("O " + n + " º termo é igual a " + an)
+
+         /* Sobre operadores relacionais:
+          > - maior
+          < - menor
+          == - igual
+          >= - maior ou igual
+          <= - menor ou igual
+          != = diferente */
+
+          var valor = window.prompt("Insira um valor: ")
+          window.alert(valor > 5)
+          window.alert(valor < 100)
+          window.alert(valor == valor)
+          window.alert(valor != 50)
+          // ver no site!!!
+
+         /* Sobre operadores lógicos:
+         ! -> negação
+         && -> conjunção
+         || -> disjunção */
+
+
+
     </script>
 </body>
 </html>
