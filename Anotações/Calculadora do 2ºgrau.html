@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora do 2º grau</title>
+</head>
+<body>
+    <script>
+        window.alert("Bem-vindo à sua calculadora do 2º grau.")
+        var a = Number(window.prompt("Qual o valor de a?"))
+        var b = Number(window.prompt("Qual o valor de b?"))
+        var c = Number(window.prompt("Qual o valor de c?"))
+        var delta = b**2 - 4*a*c
+        var x1 = ((-1)*b + delta**0.5) / 2*a
+        var x2 = ((-1)*b - delta**0.5) / 2*a
+        window.alert("O valor de x é" + x1 + "ou" + x2)
+    </script>
+</body>
+</html>
