@@ -13,18 +13,22 @@
 </head>
 <body>
     <h1><u>Calculadora de PA e PG</u></h1>
-    <p>Valor do primeiro termo: <input type="number" id="a1"> <br></p>
-    <p>Valor do número de termos: <input type="number" id="n"> <br></p>
-    <p>Valor da raíz: <input type="number" id="r"> <br></p>
+    <p>Valor do primeiro termo: <input type="number" name="a1" id="a1"> <br></p>
+    <p>Valor do número de termos: <input type="number" name="n" id="n"> <br></p>
+    <p>Valor da raíz: <input type="number" name="r" id="r"> <br></p>
     <input type="button" value="Calcular" onclick="calcular()"> <br>
-    <p>O valor do termo desejado é <div id="resultado">...</div></p>
+    <div id="res">...</div>
     <script>
         function calcular(){
-            var a1 = Number.window.document.getElementById("imput#a1")
-            var n = window.document.getElementById("imput#n")
-            var r = window.document.getElementById("imput#r")
+            var x = window.document.getElementById('a1')
+            var y = window.document.getElementById('n')
+            var z = window.document.getElementById('r')
+            var res = window.document.getElementById('res')
+            var a1 = Number(x.value)
+            var n = Number(y.value)
+            var r = Number(z.value)
             var an = a1 + (n-1)*r
-            resultado.indeed
+            res.innerHTML = 'O valor do termo desejado é' + an
         }
     </script>
 </body>
