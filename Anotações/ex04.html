@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculador de Cinemática</title>
+    <style>
+        html{
+         font-family: Arial, Helvetica, sans-serif;
+         color: green;
+         text-align: center;
+         background-color: black;
+        }
+        div{
+         margin: 20px;
+         margin-right: 540px;
+         margin-left: 540px;
+         border-style: solid;
+         background-color: white;
+         color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1><u>Calculadora de MRU</u></h1> <br>
+    <p>Valor do espaço inicial: <input type="number" name="si" id="si"> <br></p>
+    <p>Valor do espaço final: <input type="number" name="sf" id="sf"> <br></p>
+    <p>Valor da velocidade: <input type="number" name="vf" id="vf"> <br></p>
+    <p>Valor do tempo: <input type="number" name="t" id="t"> <br></p>
+    <input type="button" value="Calcular" onclick="calcular()"> <br>
+    <div id="res">...</div>
+    <script>
+        function calcular(){
+            var y = window.document.getElementById('sf')
+            var yy = window.document.getElementById('si')
+            var x = window.document.getElementById('vf')
+            var z = window.document.getElementById('t')
+            var res = window.document.getElementById('res')
+            var vf = Number(x.value)
+            var t = Number(z.value)
+            var sf = Number(y.value)
+            var si = Number(yy.value)
+                //Calcular o sf
+                if(sf==0){
+                    sf=si+vf*t
+                    res.innerText = 'O espaço final é igual a ' + sf + ' m.'
+                }
+                //Calcular a vf
+                if(vf==0){
+                    vf=sf/t-si
+                    res.innerText = 'A velocidade é igual a ' + vf + ' m/s.'
+                }
+                //Calcular o t
+                if(t==0){
+                    t=sf/vf-si
+                    res.innerText = 'A variação do tempo é igual a ' + t + ' s.'
+                }
+        }
+    </script>
+</body>
+</html>
