@@ -3,44 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Relógio</title>
-    <style>
-        body{
-            background-color: black;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            text-align: center;
-        }
-        header{
-            color: rgb(0, 255, 0);
-            text-align: center;
-        }
-        footer{
-            color: rgb(0, 255, 0);
-            text-align: center;
-            font-style: italic;
-        }
-        input{
-            background-color: rgb(0, 255, 0);
-            border-radius: 10px;
-            padding: 15px;
-            width: 500px;
-            text-align: center;
-        }
-    </style>
+    <title>Document</title>
 </head>
 <body>
-    <header>
-        <h1><b>Calculadora de Modificador de Habilidade</b></h1>
-    </header>
-    <section>
-        <div id="hab"><input type="number"></div>
-        <div></div>
-    </section>
-    <footer>
-        <p>&copy;SalesProductions</p>
-    </footer>
     <script>
-
+        var f = window.prompt("Número que se deseja ter o fatorial:")
+        while(f>1){
+            var f = f-1
+            document.write(f)
+        }
     </script>
 </body>
 </html>
