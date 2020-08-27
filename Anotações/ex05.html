@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora de Fatorial</title>
 </head>
 <body>
+    <h1>Calculadora de Fatorial</h1>
     <script>
         var f = window.prompt("Número que se deseja ter o fatorial:")
-        while(f>1){
-            var f = f-1
-            document.write(f)
-        }.
+        do{
+            document.write(f + "*")
+            var res = f*(f-1)
+            f = f-1
+        } while(f>1)
+        document.write("1 =" + res)
     </script>
 </body>
 </html>
